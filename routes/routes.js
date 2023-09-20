@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const URL = require("../models/url");
+const shortid = require("shortid");
 
 // Route to short URL
 router.post("/shorten", async (req, res) => {
